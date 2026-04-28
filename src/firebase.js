@@ -4,14 +4,14 @@ import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBbIEFsKPx09D3DMdcnQygHYBaO7wqUi6I",
-  authDomain: "restoran-b740a.firebaseapp.com",
-  databaseURL: "https://restoran-b740a-default-rtdb.firebaseio.com",
-  projectId: "restoran-b740a",
-  storageBucket: "restoran-b740a.firebasestorage.app",
-  messagingSenderId: "280188188742",
-  appId: "1:280188188742:web:ecbd959d6a1646dab9b247",
-  measurementId: "G-XDWDHM1EQF"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
